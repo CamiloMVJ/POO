@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pjBoletas", "pjBoletas\pjBoletas.csproj", "{515DABA5-0F7B-493C-9EEC-1CE9D9C19546}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pjBoletas", "pjBoletas\pjBoletas.csproj", "{515DABA5-0F7B-493C-9EEC-1CE9D9C19546}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F235E5DF-1EA9-4C39-A41B-A540FB435223}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

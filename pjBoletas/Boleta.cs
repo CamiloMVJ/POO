@@ -6,29 +6,35 @@ using System.Threading.Tasks;
 
 namespace pjBoletas
 {
-    internal class Boleta
+    public class Boleta
     {
         //Atributos
-        public String cliente { get; set; }
-        public String direccion { get; set; }
-        public DateTime fechaCompra { get; set; }
-        public String DNI { get; set; }
-        public String producto { get; set; }
-        public int cantidad { get; set; }
-        public double precio { get; set; }
-
+        public String? Cliente { get; set; }
+        public int NumBoleta { get; set; }
+        public String? Direccion { get; set; }
+        public String? DNI { get; set; }
+        public DateTime FechaCompra { get; set; }
+        public String? Producto { get; set; }
+        public int Cantidad { get; set; }
 
         //Metodos
 
         public double Precio()
         {
-            return this.precio;
+            switch (this.Producto)
+            {
+                case "PS5+ 1 MANDO DS5": return 500;
+                case "PS4 (1TB) + 1 MANDO DS4": return 619;
+                case "MANDO PS5/DS5": return 69;
+                case "MANDO PS4/DS4": return 60;
+            }
+            return 0;
+        }
+        public double Importe()
+        {
+            return Precio() * this.Cantidad;
         }
 
-        public double importe()
-        {
-            return this.precio * this.cantidad;
-        }
 
     }
 }
