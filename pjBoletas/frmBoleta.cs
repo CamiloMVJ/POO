@@ -14,7 +14,7 @@ namespace pjBoletas
         private void frmBoleta_Load(object sender, EventArgs e)
         {
             lblFecha.Text = DateTime.Now.ToShortDateString();
-            lblNumBoleta.Text = (numboleta).ToString("0000");
+            lblNumBoleta.Text = (numboleta).ToString("D5");
             buttLimpiar_Click(sender, e);
             boleta.Producto = txtProducto.Text;
 
@@ -86,7 +86,7 @@ namespace pjBoletas
         {
             importe = 0;
             lblPrecio.Text = (0).ToString("C");
-            
+            lvInfo.Items.Clear();
             txtNombre.Clear();
             txtDireccion.Clear();
             txtProducto.ResetText();
