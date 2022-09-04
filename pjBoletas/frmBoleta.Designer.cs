@@ -35,15 +35,15 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttRegistrar = new System.Windows.Forms.Button();
             this.buttLimpiar = new System.Windows.Forms.Button();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.txtDNI = new System.Windows.Forms.TextBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtDNI = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtProducto = new System.Windows.Forms.ComboBox();
             this.lvEstadistica = new System.Windows.Forms.ListView();
@@ -132,13 +132,6 @@
             this.buttLimpiar.UseVisualStyleBackColor = true;
             this.buttLimpiar.Click += new System.EventHandler(this.buttLimpiar_Click);
             // 
-            // txtCantidad
-            // 
-            this.txtCantidad.Location = new System.Drawing.Point(155, 109);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(75, 29);
-            this.txtCantidad.TabIndex = 12;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -165,6 +158,20 @@
             this.label6.Size = new System.Drawing.Size(56, 21);
             this.label6.TabIndex = 0;
             this.label6.Text = "Precio";
+            // 
+            // txtDNI
+            // 
+            this.txtDNI.Location = new System.Drawing.Point(378, 224);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(213, 29);
+            this.txtDNI.TabIndex = 9;
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.Location = new System.Drawing.Point(155, 112);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(75, 29);
+            this.txtCantidad.TabIndex = 12;
             // 
             // label2
             // 
@@ -199,13 +206,6 @@
             this.label4.Size = new System.Drawing.Size(38, 21);
             this.label4.TabIndex = 10;
             this.label4.Text = "DNI";
-            // 
-            // txtDNI
-            // 
-            this.txtDNI.Location = new System.Drawing.Point(375, 224);
-            this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(216, 29);
-            this.txtDNI.TabIndex = 9;
             // 
             // label5
             // 
@@ -315,15 +315,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(967, 910);
             this.Controls.Add(this.lvInfo);
             this.Controls.Add(this.buttEstadistica);
             this.Controls.Add(this.lvEstadistica);
             this.Controls.Add(this.txtProducto);
+            this.Controls.Add(this.txtDNI);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtDNI);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.label2);

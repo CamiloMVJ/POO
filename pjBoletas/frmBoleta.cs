@@ -98,7 +98,6 @@ namespace pjBoletas
 
         private void buttEstadistica_Click(object sender, EventArgs e)
         {
-
             ListViewItem estadistica = new ListViewItem(lblNumBoleta.Text);
             estadistica.SubItems.Add(lblFecha.Text);
             estadistica.SubItems.Add(cantidadacumulada.ToString());
@@ -106,6 +105,7 @@ namespace pjBoletas
             lvEstadistica.Items.Add(estadistica);
             numboleta++;
             lblNumBoleta.Text = numboleta.ToString("D5");
+            buttLimpiar_Click(sender, e);
         }
 
 
