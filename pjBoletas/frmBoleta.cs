@@ -6,6 +6,7 @@ namespace pjBoletas
         double importe = 0;
         Boleta boleta = new Boleta();
         int numboleta = 1;
+        ListViewItem item;
         public frmBoleta()
         {
             InitializeComponent();
@@ -108,7 +109,15 @@ namespace pjBoletas
             buttLimpiar_Click(sender, e);
         }
 
-
+        private void lvInfo_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            item = lvInfo.GetItemAt(e.X, e.Y);
+            String producto = lvInfo.Items[item.Index].SubItems[1].Text;
+            DialogResult r = MessageBox.Show("¿Esta seguro que quiere elimitar el item?" + ">>" + producto, "Control de boletas", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (r == DialogResult.Yes)
+                lvInfo.Items.Remove(item);
+            lblTotal.Text = "";
+        }
     }
 }
 /*PS5+ 1 MANDO DS5

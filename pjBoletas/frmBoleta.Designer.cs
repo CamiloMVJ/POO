@@ -35,11 +35,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttRegistrar = new System.Windows.Forms.Button();
             this.buttLimpiar = new System.Windows.Forms.Button();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtDNI = new System.Windows.Forms.TextBox();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
@@ -57,6 +57,8 @@
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -132,6 +134,13 @@
             this.buttLimpiar.UseVisualStyleBackColor = true;
             this.buttLimpiar.Click += new System.EventHandler(this.buttLimpiar_Click);
             // 
+            // txtCantidad
+            // 
+            this.txtCantidad.Location = new System.Drawing.Point(155, 112);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(75, 29);
+            this.txtCantidad.TabIndex = 12;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -165,13 +174,6 @@
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.Size = new System.Drawing.Size(213, 29);
             this.txtDNI.TabIndex = 9;
-            // 
-            // txtCantidad
-            // 
-            this.txtCantidad.Location = new System.Drawing.Point(155, 112);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(75, 29);
-            this.txtCantidad.TabIndex = 12;
             // 
             // label2
             // 
@@ -290,6 +292,7 @@
             this.lvInfo.TabIndex = 19;
             this.lvInfo.UseCompatibleStateImageBehavior = false;
             this.lvInfo.View = System.Windows.Forms.View.Details;
+            this.lvInfo.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lvInfo_MouseDoubleClick);
             // 
             // columnHeader5
             // 
@@ -311,12 +314,32 @@
             this.columnHeader8.Text = "Importe";
             this.columnHeader8.Width = 120;
             // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(562, 593);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(54, 21);
+            this.lblTotal.TabIndex = 20;
+            this.lblTotal.Text = "label8";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(502, 593);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(45, 21);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Total";
+            // 
             // frmBoleta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(967, 910);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lvInfo);
             this.Controls.Add(this.buttEstadistica);
             this.Controls.Add(this.lvEstadistica);
@@ -375,5 +398,7 @@
         private ColumnHeader columnHeader6;
         private ColumnHeader columnHeader7;
         private ColumnHeader columnHeader8;
+        private Label lblTotal;
+        private Label label9;
     }
 }
